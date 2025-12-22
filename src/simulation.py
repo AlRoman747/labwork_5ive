@@ -71,7 +71,7 @@ def get_commands(n):
         random_command = random.choice(list(functions(book, removed_book).keys()))
         func = functions(book, removed_book)[random_command]
 
-        if random_command is "add":
+        if random_command == "add":
             print(f"случайное событие №{i} - добавление книги: {book.__repr__()}")
             func[0](func[-1])
             func[1](func[-1])

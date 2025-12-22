@@ -14,7 +14,7 @@ def main() -> None:
               f"4. read random book")
         try:
             action = int(input())
-            if action is 1:
+            if action == 1:
                 print("write how many actions in simulation you want")
                 steps = int(input())
                 get_commands(steps)
