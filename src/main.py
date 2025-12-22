@@ -6,7 +6,7 @@ def main() -> None:
     move = input()
     if move == '-1': print("see you soon")
 
-    while move != '-1':
+    while move == '-1':
         print(f"Good choice\nLets move on and choose one of these action, what you can do here\nWrite only number of action")
         print(f"1. start random simulation\n"
               f"2. create your own book\n"
