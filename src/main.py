@@ -59,6 +59,10 @@ def main() -> None:
         move = input()
     print("thanks for visit library! see you soon")
 
+
+    d = BookCollection()
+    print(d.__getitem__(748))
+
 if __name__ == "__main__":
     main()
 

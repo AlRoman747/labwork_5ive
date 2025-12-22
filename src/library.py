@@ -39,7 +39,7 @@ class BookCollection:
                 for item in self._items[key]:
                     new_list.add(item)
                 return new_list
-        except: raise IndexError("The book is doesn't exist")
+        except: raise Exception("The book is doesn't exist")
     def __iter__(self) -> list:
         return iter(self._items)
 
@@ -151,5 +151,5 @@ class GetWrittenBook:
             return generated_text
 
         except Exception as e:
-            raise ValueError(f"Error with generate: {e}")
+            raise ValueError(f"Error with generate")
 
