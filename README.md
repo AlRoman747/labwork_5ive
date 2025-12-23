@@ -20,9 +20,9 @@ if event in ("add", "remove"):
 Поведение симуляции соответствует ожидаемому. 
 Доказательства: 
 до устранения проблем
-!alt_text[screenshots/Screenshot%202025-12-22%20190905.png]
+![Image alt](https://github.com/AlRoman747/labwork_5ive/blob/main/screenshots/Screenshot%202025-12-22%20190905.png)
 после
-!alt_text[screenshots/Screenshot%202025-12-22%20191843.png]
+![Image alt](https://github.com/AlRoman747/labwork_5ive/blob/main/screenshots/Screenshot%202025-12-22%20191843.png)
 
 ### Ошибка 2 — перехват слишком общего исключения
 Место: library.py, метод BookCollections.__getitem__
@@ -34,7 +34,6 @@ if event in ("add", "remove"):
 Установлен breakpoint на try. 
 Причина: 
 Указаны Exception для всех ошибок, вместо конкретных, что мешает отладке
-!alt_text[screenshots/Screenshot%202025-12-22%20201203.png]
 Исправление:
 Добавлены новый парсинг ошибок: 
 except KeyError: raise KeyError("KeyError. The book doesn't exist.")
@@ -44,9 +43,9 @@ except TypeError: raise TypeError("TypeError. The book doesn't exist.")
 Поведение симуляции соответствует ожидаемому. 
 Доказательства: 
 до устранения проблем
-!alt_text[screenshots/Screenshot%202025-12-22%20201203.png]
+![Image alt](https://github.com/AlRoman747/labwork_5ive/blob/main/screenshots/Screenshot%202025-12-22%20201203.png)
 после
-!alt_text[screenshots/Screenshot%202025-12-22%20202225.png]
+![Image alt](https://github.com/AlRoman747/labwork_5ive/blob/main/screenshots/Screenshot%202025-12-22%20202225.png)
 
 ### Ошибка 3 — изменение коллекции во время итерации
 Место: simulation.py, метод get_commands
@@ -66,9 +65,9 @@ authors.discard(removed_book.author); years.discard(removed_book.year); isbns.di
 Поведение симуляции соответствует ожидаемому. Теперь мы не проходясь по коллекции
 Доказательства: 
 до устранения проблем
-!alt_text[screenshots/Screenshot%202025-12-22%20212023.png]
+![Image alt](https://github.com/AlRoman747/labwork_5ive/blob/main/screenshots/Screenshot%202025-12-22%20212023.png)
 после
-!alt_text[screenshots/Screenshot%202025-12-22%20212454.png]
+![Image alt](https://github.com/AlRoman747/labwork_5ive/blob/main/screenshots/Screenshot%202025-12-22%20212454.png)
 
 ### Ошибка 4 — неверное логическое условие
 Место: main.py, главный цикл while
@@ -88,10 +87,10 @@ authors.discard(removed_book.author); years.discard(removed_book.year); isbns.di
 Доказательства: 
 до устранения проблем
 даже не заходит и не начинает программу
-!alt_text[screenshots/Screenshot%202025-12-22%20215118.png]
+![Image alt](https://github.com/AlRoman747/labwork_5ive/blob/main/screenshots/Screenshot%202025-12-22%20215118.png)
 после
 всё работает корректно
-!alt_text[screenshots/Screenshot%202025-12-22%20215248.png]
+![Image alt](https://github.com/AlRoman747/labwork_5ive/blob/main/screenshots/Screenshot%202025-12-22%20215248.png)
 
 ### Ошибка 5 — перепутанные аргументы конструктора
 Место: library.py,, метод BookCatalog.remove
@@ -109,6 +108,6 @@ authors.discard(removed_book.author); years.discard(removed_book.year); isbns.di
 Поведение симуляции соответствует ожидаемому. 
 Доказательства: 
 до устранения проблем
-!alt_text[screenshots/Screenshot%202025-12-22%20215530.png]
+![Image alt](https://github.com/AlRoman747/labwork_5ive/blob/main/screenshots/Screenshot%202025-12-22%20215530.png)
 после
-!alt_text[screenshots/Screenshot%202025-12-22%20215601.png]
+![Image alt](https://github.com/AlRoman747/labwork_5ive/blob/main/screenshots/Screenshot%202025-12-22%20215601.png)
