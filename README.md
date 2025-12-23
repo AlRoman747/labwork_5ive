@@ -12,6 +12,7 @@
 Причина: 
 Неправильно выбран оператор сравнения
 ![Image alt](https://github.com/AlRoman747/labwork_5ive/blob/main/screenshots/Screenshot%202025-12-22%20161825.png)
+
 Исправление:
 Заменено на: 
 if event in ("add", "remove"): 
